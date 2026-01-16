@@ -1,3 +1,9 @@
+:root{
+  --color-1: red;
+  --color-2: green;
+  --color-3: blue;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
