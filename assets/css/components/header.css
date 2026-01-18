@@ -1,12 +1,16 @@
 /* ==========================================
    1. ESTILOS BASE (MOBILE FIRST)
    ========================================== */
-
+:root{
+    --color-fondoheader: #F2D43C;
+    --color-letraheader: #2E2E2E; 
+}
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--color-fondoheader);
+    color: var(--color-letraheader);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 1rem 0;
     position: sticky;

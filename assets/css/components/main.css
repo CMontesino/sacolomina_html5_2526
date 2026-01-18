@@ -1,0 +1,8 @@
+:root{
+    --color-fondomain: #6FB7A7;
+    --color-letramain: #FFFFFF;
+}
+main{
+    background-color: var(--color-fondomain);
+    color: var(--color-letramain);
+}

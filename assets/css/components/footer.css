@@ -1,6 +1,12 @@
+:root{
+    --color-fondofooter: #2E2E2E;
+    --color-letrafooter: #F2D43C;
+}
 footer {
     text-align: center;
     padding: 1rem;
     font-family: Roboto Mono;
     font-weight: 150;
+    background-color: var(--color-fondofooter);
+    color: var(--color-letrafooter);
 }

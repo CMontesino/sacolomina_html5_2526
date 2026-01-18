@@ -1,0 +1,8 @@
+:root{
+    --color-fondoaside: #FFF6D6;
+    --color-letraaside: #2E2E2E;
+}
+aside{
+    background-color: var(--color-fondoaside);
+    color: var(--color-letraaside);
+}
