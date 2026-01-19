@@ -6,3 +6,57 @@ main{
     background-color: var(--color-fondomain);
     color: var(--color-letramain);
 }
+
+/*Productos de la tienda*/
+.products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            }
+
+            .product-card {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+
+            .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            }
+
+            .product-title {
+            margin: 0.8rem 0 0.4rem;
+            color: #2E2E2E;
+            }
+
+            .product-desc {
+            font-size: 0.9rem;
+            color: #555;
+            }
+
+            .product-price {
+            display: block;
+            margin: 0.8rem 0;
+            font-weight: bold;
+            color: #E53935;
+            }
+
+            .product-btn {
+            display: inline-block;
+            background-color: #F2D43C;
+            color: #2E2E2E;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            }
+
+            .product-btn:hover {
+            background-color: #F28C28;
+            color: #FFFFFF;
+            }
