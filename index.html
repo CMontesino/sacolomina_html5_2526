@@ -15,6 +15,8 @@
     <!-- CSS DEL CONTENIDO DE CADA PÁGINA ESPECÍFICO -->
     <link rel="stylesheet" href="assets/css/pages/index.css">
     
+    <!--JS POP UP-->
+    <script src="/assets/js/aside-popup.js"></script>
 
     <!-- FAVICON -->
     <link rel="icon" type="icon" href="assets/images/Chubasquero.ico">
@@ -57,9 +59,17 @@
     </header>
 
     <aside>
-        <!--Anuncio de chubasqueros--> <!--HACER TABLET IGUAL A MOBIL, Y POPUP AL ANUNCIO (JS)-->
-        <div class="promo-banner">
+        <div class="promo-banner ad-aside">
             <div class="promo-content">
+                <h2>¡No dejes que la lluvia arruine tu día!</h2>
+                <p>Descubre nuestros <strong>chubasqueros impermeables</strong>, ligeros y con estilo.</p>
+                <p class="offer">🎉 Oferta especial: ¡10% de descuento hoy!</p>
+                <a href="/pages/about.html" class="promo-btn">Comprar Ahora</a>
+            </div>
+        </div>
+        <div class="promo-banner ad-popup" id="adPopup">
+            <div class="promo-content">
+                <button class="ad-close" onclick="closeAd()">✕</button>
                 <h2>¡No dejes que la lluvia arruine tu día!</h2>
                 <p>Descubre nuestros <strong>chubasqueros impermeables</strong>, ligeros y con estilo.</p>
                 <p class="offer">🎉 Oferta especial: ¡10% de descuento hoy!</p>
