@@ -104,7 +104,7 @@ aside{
         font-size: 1rem;
     }
 }
-@media (max-width: 770px) {
+@media (max-width: 600px) {
     .promo-banner{
         max-width: 75%;
     }
