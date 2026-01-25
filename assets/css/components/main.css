@@ -60,3 +60,31 @@ main{
             background-color: #F28C28;
             color: #FFFFFF;
             }
+
+/* Fin productos de la tienda */
+
+/* Estilos paginas de privacidad y cookies */
+
+.privado{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #2E2E2E;
+}
+.privado p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.privado ul{
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.privado a:hover{
+    color: #F28C28;
+    font-style: bold;
+}
+/* Fin estilos paginas de privacidad y cookies */
