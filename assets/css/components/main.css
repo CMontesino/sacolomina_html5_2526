@@ -88,3 +88,107 @@ main{
     font-style: bold;
 }
 /* Fin estilos paginas de privacidad y cookies */
+
+    /* Estilos para el formulario de inicio de sesión */
+    .contenedor {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .contenedor header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contenedor header h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+    }
+    .contenedor header p {
+        margin: 5px 0 0;
+        font-size: 16px;
+        color: #666;
+    }
+    .contenedor .formulario-contenedor {
+        width: 100%;
+    }
+    .contenedor .formulario-contenedor form {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor .formulario-contenedor .grupo-formulario {
+        margin-bottom: 15px;
+    }
+    .contenedor .formulario-contenedor .grupo-formulario label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+    .contenedor .formulario-contenedor .grupo-formulario .campo-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .contenedor .formulario-contenedor .grupo-formulario .campo-input.error {
+        border-color: #e74c3c;
+    }
+    .contenedor .formulario-contenedor .grupo-formulario .mensaje-error {
+        color: #e74c3c;
+        font-size: 14px;
+        display: none;
+        margin-top: 5px;
+    }
+    .contenedor .formulario-contenedor .mensaje-exito {
+        display: none;
+        color: #27ae60;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .contenedor .formulario-contenedor .botones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenedor .formulario-contenedor .botones .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .contenedor .formulario-contenedor .botones .btn-limpiar {
+        background-color: #bdc3c7;
+        color: #fff;
+    }
+    .contenedor .formulario-contenedor .botones .btn-enviar {
+        background-color: #3498db;
+        color: #fff;
+    }
+    .contenedor .formulario-contenedor .nota {
+        font-size: 14px;
+        color: #777;
+        text-align: center;
+        margin-top: 15px;
+    }
+    /* Estilos responsivos */
+    @media (max-width: 600px) {
+        .contenedor {
+            padding: 15px;
+        }
+        .contenedor .formulario-contenedor .botones {
+            flex-direction: column;
+        }
+        .contenedor .formulario-contenedor .botones .btn {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    /* Fin de los estilos para el formulario de inicio de sesión */
+    
