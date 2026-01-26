@@ -116,6 +116,7 @@ main{
         width: 100%;
     }
     .contenedor .formulario-contenedor form {
+        /* Flexbox para el formulario */
         display: flex;
         flex-direction: column;
     }
@@ -152,6 +153,7 @@ main{
         margin-bottom: 15px;
     }
     .contenedor .formulario-contenedor .botones {
+        /* Flexbox para los botones */
         display: flex;
         justify-content: space-between;
         align-items: center;

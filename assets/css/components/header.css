@@ -6,6 +6,7 @@
     --color-letraheader: #2E2E2E; 
 }
 .header {
+    /* Flexbox para el header */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,12 +25,14 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    /* Flexbox para el contenedor del header */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
+    /* Flexbox para el logo */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -72,6 +75,7 @@
     overflow: hidden;
     transition: height 0.3s ease-in-out;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    /* Flexbox para el menú de navegación */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,6 +83,7 @@
 }
 
 .nav-list {
+    /* Flexbox para la lista de navegación */
     display: flex;
     flex-direction: column;
     align-items: center;
