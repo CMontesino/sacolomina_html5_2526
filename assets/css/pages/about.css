@@ -1,4 +1,4 @@
-        :root {
+ :root {
             --color-primario: #2c3e50;
             --color-secundario: #3498db;
             --color-accent: #1abc9c;
@@ -11,91 +11,9 @@
             --transicion: all 0.3s ease;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
 
-        body {
-            background-color: var(--color-fondo);
-            color: var(--color-texto);
-            line-height: 1.6;
-        }
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header y Navegación */
-        header {
-            background-color: var(--color-blanco);
-            box-shadow: 0 2px 10px var(--color-sombra);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-        }
-
-        .logo-icon {
-            color: var(--color-secundario);
-            font-size: 1.8rem;
-        }
-
-        .logo-text {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--color-primario);
-        }
-
-        .logo-text span {
-            color: var(--color-accent);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--color-primario);
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: var(--transicion);
-        }
-
-        nav a:hover {
-            color: var(--color-secundario);
-            background-color: rgba(52, 152, 219, 0.1);
-        }
-
-        .nav-active {
-            color: var(--color-secundario);
-            border-bottom: 3px solid var(--color-secundario);
-        }
-
-        /* Hero Section */
+        /* Hero Section - Ahora en la parte superior sin header */
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                         url('https://images.unsplash.com/photo-1519690889869-e705e59f72e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
@@ -103,12 +21,41 @@
             background-position: center;
             color: var(--color-blanco);
             text-align: center;
-            padding: 120px 20px;
+            padding: 100px 20px;
             margin-bottom: 80px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .logo-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .logo-icon-hero {
+            color: var(--color-accent);
+            font-size: 2.5rem;
+        }
+
+        .logo-text-hero {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-blanco);
+        }
+
+        .logo-text-hero span {
+            color: var(--color-accent);
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
@@ -346,84 +293,6 @@
             display: block;
         }
 
-        /* Footer */
-        footer {
-            background-color: var(--color-primario);
-            color: var(--color-blanco);
-            padding: 60px 0 30px;
-            margin-top: 80px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-column h3 {
-            font-size: 1.3rem;
-            margin-bottom: 25px;
-            color: var(--color-blanco);
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-column h3:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background-color: var(--color-accent);
-        }
-
-        .footer-column p, .footer-column a {
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 10px;
-            display: block;
-            text-decoration: none;
-            transition: var(--transicion);
-        }
-
-        .footer-column a:hover {
-            color: var(--color-accent);
-            padding-left: 5px;
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: var(--color-blanco);
-            font-size: 1.2rem;
-            transition: var(--transicion);
-        }
-
-        .social-icons a:hover {
-            background-color: var(--color-accent);
-            transform: translateY(-5px);
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
-        }
-
         /* Responsive */
         @media (max-width: 992px) {
             .historia-content, .tecnologia-content {
@@ -436,15 +305,6 @@
         }
 
         @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                gap: 20px;
-            }
-            
-            nav ul {
-                gap: 15px;
-            }
-            
             .hero {
                 padding: 80px 20px;
             }
@@ -458,6 +318,15 @@
             }
             
             .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .logo-hero {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .logo-text-hero {
                 font-size: 2rem;
             }
         }
